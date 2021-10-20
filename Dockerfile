@@ -14,11 +14,11 @@ COPY package-lock.json ./
 RUN npm install -g npm
 
 #
-RUN npm install pm2 -g
+#RUN npm install pm2 -g
 
 # add app
 COPY . ./
 
 # start app
-#CMD ["npm", "start"]
-CMD ["pm2-runtime", "app.js"]
+CMD ["npm", "start"]
+#CMD ["pm2-runtime", "app.js"]
