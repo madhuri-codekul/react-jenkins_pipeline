@@ -21,4 +21,4 @@ COPY . ./
 
 # start app
 #CMD ["npm", "start"]
-CMD ["node", "app.js"]
+CMD ["pm2-runtime", "app.js"]
