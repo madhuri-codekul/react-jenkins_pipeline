@@ -14,7 +14,7 @@ COPY package-lock.json ./
 RUN npm install -g npm
 
 #
-#RUN npm install pm2 -g
+RUN npm install pm2 -g
 
 # add app
 COPY . ./
